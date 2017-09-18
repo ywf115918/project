@@ -1,0 +1,7 @@
+<view style="font-size:30rpx;float:left;margin-left:10%;width:80%;height:100rpx; line-height:100rpx;  text-align: center;">上东微狐网络科技有限公司</view>
+
+<map id="map" markers="{{markers}}" longitude="117.063091" latitude="36.684421" scale="14" style="margin-left:5%;margin-right:5%; width:90%; height:500rpx;">
+</map>
+<view wx:for="{{detail}}" style="font-size:30rpx;float:left;margin-left:10%;width:80%;height:100rpx; line-height:100rpx;margin-top:100rpx;">详细地址:{{item.size}}</view>
+<button type="default" bindtap="calling" style="width:80%;margin-top:100rpx;">联系我们</button>
+

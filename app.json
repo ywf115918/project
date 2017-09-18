@@ -1,0 +1,43 @@
+{
+  "pages": [ 
+    "pages/index/index",
+    "pages/data1/data1",
+    "pages/data/data",
+    "pages/love/love",
+    "pages/mine/mine",
+    "pages/meis/meis",
+    "pages/details/details"
+  ],
+    "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5c4caf",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#fff",
+    "color": "#a498e5",
+    "backgroundColor": "#5c4caf",
+    "position-bottom": "50rpx",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/footer1.jpg",
+        "selectedIconPath": "img/footer5.jpg",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/love/love",
+        "iconPath": "img/footer2.jpg",
+        "selectedIconPath": "img/footer6.jpg",
+        "text": "案例"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "img/footer4.jpg",
+        "selectedIconPath": "img/footer8.jpg",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+<view class="container"> 
+<image src="{{Introduced}}" class="image"></image>
+  <view wx:for="{{Introduceds}}" wx:key="">
+     <view class="Introduceds">{{item}}</view>
+  </view>
+  
+  <navigator url="/pages/meis/meis">
+    <button style="margin-top:100rpx;" type="default" bindtap="openMap">关于我们</button>
+  </navigator>
+
+ </view>

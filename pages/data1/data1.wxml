@@ -1,0 +1,20 @@
+   <view wx:for="{{imger}}" wx:key="">
+       <view class="name">
+       {{item.name}}
+       </view>
+  </view>
+
+   <swiper indicator-dots="{{indicatorDots}}"  autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgs}}" wx:key="">
+        <swiper-item  data-id="{{value.id}}">
+                <image src="{{item.url}}" class="img"/>
+        </swiper-item>
+        </block>
+    </swiper>
+
+<view wx:for="{{imger}}" wx:key="">
+       <view class="datail">
+       {{item.detail}}
+       </view>
+  </view>
+

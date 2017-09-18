@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container"> 
+      <!-- 轮播图 -->
+    <swiper indicator-dots="{{indicatorDots}}"  autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgs}}" wx:key="">
+        <swiper-item  data-id="{{value.id}}">
+                <image src="{{item.url}}" class="img"/>
+        </swiper-item>
+        </block>
+    </swiper>
+    <!-- 分类 -->
+    <view class="tubiao" catchtap="toOrder">
+        <view wx:for="{{text}}" class="size" wx:key="" bindtap="tubiao-hans">
+            <navigator url="{{item.id}}">
+              <view class="boxs">
+              <image src="{{item.url}}" class="photo"/>
+              <view class="tubiao-size">{{item.size}}</view> 
+              </view> 
+            </navigator>            
+        </view>
+	  </view>
+    <!-- 宣传-->
+        <view  class="gem">
+        <view  class="plear" wx:for="{{Jewellery}}" wx:key="">
+            <image src="{{item}}" class="fear"/>
+        </view>
+    </view>
+    <view class="discount">
+       <view class="discount-size">{{discount}}</view>
+    </view>
+    <view class="gems">
+        <view  class="plears" wx:for="{{Jewelleryer}}" wx:key="">
+            <navigator url="/pages/data/data">
+                <image src="{{item}}" class="fears"/>
+            </navigator> 
+        </view>
+    </view>
+</view>
